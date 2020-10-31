@@ -1,13 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
+using YTVideoToMp3.Services;
 
 namespace YTVideoToMp3
 {
@@ -24,6 +21,9 @@ namespace YTVideoToMp3
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
+            services.AddHttpClient<IYoutubeService, YoutubeService>()
+                   .SetHandlerLifetime(TimeSpan.FromMinutes(5));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

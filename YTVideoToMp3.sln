@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B5B3ADAC-2C9D-4C4E-B501-78E5393455C0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YTVideoToMp3", "src\YTVideoToMp3.csproj", "{745A79D3-75DD-43C0-B1CC-512497990EAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YTVideoToMp3", "src\YTVideo2Mp3\YTVideoToMp3.csproj", "{23126101-EB53-4D6C-B604-54D38E8F65F7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YTVideoToMp3.Extractor", "src\YTVideo2Mp3.YoutubeExtractor\YTVideoToMp3.Extractor.csproj", "{B8F809F5-EFB9-4CB2-993F-EB6FEA67FBF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +15,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{745A79D3-75DD-43C0-B1CC-512497990EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{745A79D3-75DD-43C0-B1CC-512497990EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{745A79D3-75DD-43C0-B1CC-512497990EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{745A79D3-75DD-43C0-B1CC-512497990EAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23126101-EB53-4D6C-B604-54D38E8F65F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23126101-EB53-4D6C-B604-54D38E8F65F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23126101-EB53-4D6C-B604-54D38E8F65F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23126101-EB53-4D6C-B604-54D38E8F65F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8F809F5-EFB9-4CB2-993F-EB6FEA67FBF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8F809F5-EFB9-4CB2-993F-EB6FEA67FBF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8F809F5-EFB9-4CB2-993F-EB6FEA67FBF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8F809F5-EFB9-4CB2-993F-EB6FEA67FBF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{745A79D3-75DD-43C0-B1CC-512497990EAD} = {B5B3ADAC-2C9D-4C4E-B501-78E5393455C0}
+		{23126101-EB53-4D6C-B604-54D38E8F65F7} = {B5B3ADAC-2C9D-4C4E-B501-78E5393455C0}
+		{B8F809F5-EFB9-4CB2-993F-EB6FEA67FBF6} = {B5B3ADAC-2C9D-4C4E-B501-78E5393455C0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2EC00C1C-1A45-4E76-8BB6-F6497838952C}
