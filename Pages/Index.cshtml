@@ -1,0 +1,23 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Youtube to MP3 Converter</h1>
+    <br />
+    <div>
+        <h6>Enter YouTube URL:</h6>
+
+        <form method="POST">
+            <input type="url" id="url" class="input-large search-query" name="url" required />
+            <span><button id="btnConvert" type="submit">Convert</button></span>
+        </form>
+        
+
+    </div>
+    <br />
+    <h1>https://www.youtube.com/watch?v=a7BvGBT0gFw&list=PLOeFnOV9YBa6RxHlG61T8u0ApgPaelszF</h1>
+
+</div>
