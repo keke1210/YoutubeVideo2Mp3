@@ -24,6 +24,8 @@ namespace YTVideoToMp3
 
             services.AddHttpClient<IYoutubeService, YoutubeService>()
                    .SetHandlerLifetime(TimeSpan.FromMinutes(5));
+
+            services.AddMemoryCache();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

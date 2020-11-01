@@ -224,8 +224,7 @@ namespace YTVideoToMp3.Services
             else if (query.TryGetValue("sig", out signature))
                 uri += GetSignatureAndHost(GetSignatureKey(), signature, query);
 
-            uri = WebUtility.UrlDecode(
-                WebUtility.UrlDecode(uri));
+            uri = WebUtility.UrlDecode(WebUtility.UrlDecode(uri));
 
             var uriQuery = new Query(uri);
 

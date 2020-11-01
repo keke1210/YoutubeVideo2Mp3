@@ -10,20 +10,65 @@
     <div>
         <h6>Enter YouTube URL:</h6>
 
-        <form method="POST">
-            <input type="url" id="url" class="input-large search-query" name="url" required />
-            <span><button id="btnConvert" type="submit">Convert</button></span>
+        <form method="post">
+            <input type="url" id="youtubeUrl" name="youtubeUrl" required />
+            <span>
+                <input id="btnConvert" type="submit" value="Convert"
+                       asp-page-handler="Convert" />
+            </span>
         </form>
-        
+        <br />
+
+        <form method="post">
+
+            @if (@Model.Video.VideoIsConverted)
+            {
+                <h5>@Model.Video.Title</h5>
+
+                <input type="submit"
+                       value="Download"
+                       asp-page-handler="Download" />
+            }
+        </form>
 
     </div>
     <br />
-    <h1>https://www.youtube.com/watch?v=a7BvGBT0gFw&list=PLOeFnOV9YBa6RxHlG61T8u0ApgPaelszF</h1>
+    @*<h1>https://www.youtube.com/watch?v=j4_7cQKhqZ0</h1>*@
 
 </div>
 
-
 <script>
+
+    //var xhttp = new XMLHttpRequest();
+    //    xhttp.onreadystatechange = function() {
+
+    //        if (xhttp.readyState == XMLHttpRequest.DONE) {
+
+    //            if (xhttp.status == 200) {
+    //                alert(xhttp.responseText);
+    //            } else {
+    //                alert('There was an error processing the AJAX request.');
+    //            }
+    //        }
+    //    };
+
+
+
+    //    document.addEventListener('DOMContentLoaded', function() {
+    //        document.getElementById("btnConvert").onclick = function () {
+
+
+    //            xhttp.open('POST', '/', true);
+    //            xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+    //            var url = document.getElementById('url').value;
+    //            var body = JSON.stringify({ youtubeUrl: url });
+
+    //            console.log(body)
+
+    //            xhttp.send(body);
+    //        }
+    //    });
 
 
 </script>
